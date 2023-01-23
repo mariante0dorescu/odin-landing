@@ -4,9 +4,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 /* global properties  */
+
+.bckg-img {
+    background-image: url(../img/pexels-felix-mittermeier-956999.jpg);
+    background-size: cover;
+}
+
 a {
     text-decoration: none;
 }
@@ -30,6 +37,7 @@ li {
 .container {
     margin: 0 auto;
     margin-top: 0;
+    padding: 2rem;
 }
 
 footer {
@@ -42,39 +50,106 @@ footer {
 
 .top-links{
     min-height: 4.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
+    line-height: 2rem;
 }
 
 .hero {
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+    flex-wrap: wrap;    
 }
 
 
 nav ul {
-
     margin: 0;
     padding: 0;
-
     font-size: 1.2rem;
 }
 
-nav  li:hover {
+nav li:hover {
     color: red
 }
 
 header h1{
     font-size: 1.8rem;
-    /* color:red */
+    color: #F9FAF8;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    color: #F9FAF8;
+
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #E5E7EB;
+    margin-top: .5rem;
+}
+
+.hero img {
+    width: 32rem;
+    height: 15rem;
+    background-color: #E5E7EB;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: .5rem;
 }
 
 
+
+button {
+    background-color: #3882F6;
+    border-radius: 5px;
+    padding: .6rem 2.5rem;
+    font-size: 1.1rem;
+    color: #F9FAF8;
+    font-weight: 500;
+    margin-top: 1rem;
+    border: 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+
+.small-photo{
+    width: 170px;
+    height: 170px;
+    border: 3px solid #3882F6;
+    border-radius: 5px;
+}
+
+
+.photos-header {
+    color: #1F2937;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.text-photos {
+    color: #1F2937;
+    font-size: 1.1rem;
+    /* font-weight: 200; */
+    margin-bottom: 2rem;
+}
+
+
+footer {
+    width: 100%;
+    height: 5rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
 /* desktop screen size  */
 @media only screen and (min-width: 992px) {
+
+    *, html, body{
+        text-align: left;
+    }
+
     .container{
         max-width: 1000px;
     }
@@ -82,6 +157,10 @@ header h1{
     .top-links{
         padding-top: 1rem;
         padding-bottom: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
     }
 
     nav ul {
@@ -92,7 +171,29 @@ header h1{
 
     .hero {
         min-height: 30rem;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        flex-wrap: nowrap;
+        align-content: center;
     }
+
+    .hero header {
+        flex: 1;
+    }
+
+    .hero img {
+        margin-top: 0;
+    }
+
+    .photos{
+    display: flex;
+    gap: 3rem;
 }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+
+}
+
